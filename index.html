@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+  <title>Well</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/sp.css" media="screen and (max-width:600px)">
+  <link rel="shortcut icon" href="../images/logo1.png">
+</head>
+
+<body id="body">
+  <div id="box">
+    <header class="header">
+      <div class="logo"><img src="../images/logo1.png"></div>
+      <nav class="global-nav">
+        <ul>
+          <li class="nav-item"><a href="index.html">ホーム</a></li>
+          <li class="nav-item"><a href="recomend.html">recomend</a></li>
+          <li class="nav-item"><a href="concept.html">concept</a></li>
+          <li class="nav-item"><a href="contact.html">お問い合わせ</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!------------------------------------------------->
+    <main class="main">
+      <div class="content-a">
+        <div id="slide">
+          <img src="../images/whiteee.png">
+          <img src="../images/white-wall.png">
+          <img src="../images/set1.png">
+        </div>
+      </div>
+      <!--↑content-a--->
+
+      <div class="content-b">
+        <div class="text-box">
+          <h2>Ranking</h2>
+        </div>
+        <div class=img-box>
+          <img src="../images/e8.png">
+          <img src="../images/e9.png">
+          <img src="../images/e10.png">
+          <img src="../images/e11.png">
+          <img src="../images/e7.png">
+          <img src="../images/e14.png">
+        </div>
+        <div class="comment-box1">
+          <div class="littilebox">
+            <h3>1.ホワイトイヤリング<br>¥1000</h3>
+          </div>
+          <div class="littilebox">
+            <h3>2.ブラックイヤリング<br>¥1000</h3>
+          </div>
+          <div class="littilebox">
+            <h3>3.ブルーイヤリング<br>¥1000</h3>
+          </div>
+          <div class="littilebox">
+            <h3>4.ホワイトイヤリング<br>¥1000</h3>
+          </div>
+          <div class="littilebox">
+            <h3>5.ベージュイヤリング<br>¥1000</h3>
+          </div>
+          <div class="littilebox">
+            <h3>6.グリーンイヤリング<br>¥1000</h3>
+          </div>
+
+        </div>
+      </div>
+      <!--↑content-b--->
+      <!-------------------------------------------------->
+      <div class="content-c">
+        <div class="text-box">
+          <h2>recomend</h2>
+        </div>
+        <div class=img-box>
+          <img src="../images/e15.png">
+          <img src="../images/e2.jpg">
+          <img src="../images/e3.jpg">
+          <img src="../images/e13.png">
+          <img src="../images/e6.jpg">
+          <img src="../images/e1.jpg">
+        </div>
+        <div class="comment-box2">
+          <div class="littilebox">
+            <h3>1.玉ねぎイヤリング<br>¥1000</h3>
+          </div>
+          <div class="littilebox">
+            <h3>2.大理石風イヤリング<br>¥1000</h3>
+          </div>
+          <div class="littilebox">
+            <h3>3.パールイヤリング<br>¥1000</h3>
+          </div>
+          <div class="littilebox">
+            <h3>1.ウッドイヤリング<br>¥1000</h3>
+          </div>
+          <div class="littilebox">
+            <h3>1.ウェーブイヤリング<br>¥1000</h3>
+          </div>
+          <div class="littilebox">
+            <h3>1.真っ黒イヤリング<br>¥1000</h3>
+          </div>
+
+        </div>
+      </div>
+      <!--↑content-c-->
+
+
+      <div class="content-d">
+        <div class="text-box">
+          <h2>Category</h2>
+        </div>
+        <div class=img-box>
+          <img src="../images/whitewall1.png">
+          <img src="../images/beige.png">
+          <img src="../images/bluewall.png">
+          <img src="../images/pearl.png">
+          <img src="../images/gold.png">
+          <img src="../images/black.png">
+        </div>
+
+        <div class="comment-box3">
+          <div class="littilebox">
+            <h3>White</h3>
+          </div>
+          <div class="littilebox">
+            <h3>beige</h3>
+          </div>
+          <div class="littilebox">
+            <h3>blue</h3>
+          </div>
+          <div class="littilebox">
+            <h3>Pearl</h3>
+          </div>
+          <div class="littilebox">
+            <h3>Gold</h3>
+          </div>
+          <div class="littilebox">
+            <h3>black</h3>
+          </div>
+
+        </div>
+      </div>
+      <!--↑content-d-->
+
+      <div class="content-e">
+        <div class="imgbox">
+          <a href="index.html"><img src="../images/kasumi-100.png"></a>
+          <a href="index.html"><img src="../images/kasumi-resu3.png"></a>
+          <a href="index.html"><img src="../images/rose1.png"></a>
+        </div>
+      </div>
+      <!--↑content-e-->
+    </main>
+  </div>
+
+  <footer class="footer">
+    &copy; 2018 well.com
+  </footer>
+  <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-1.9.0.js"></script>
+  <script>
+    $(function() {
+
+
+      //（１）ページの概念・初期ページを設定
+      var page = 0;
+
+      //（２）イメージの数を最後のページ数として変数化
+      var lastPage = parseInt($("#slide img").length - 1);
+
+      //（３）最初に全部のイメージを一旦非表示にします
+      $("#slide img").css("display", "none");
+
+      //（４）初期ページを表示
+      $("#slide img").eq(page).css("display", "block");
+
+      //（５）ページ切換用、自作関数作成
+      function changePage() {
+        $("#slide img").fadeOut(1000);
+        $("#slide img").eq(page).fadeIn(1000);
+      };
+
+      //（６）～秒間隔でイメージ切換の発火設定
+      var Timer;
+
+      function startTimer() {
+        Timer = setInterval(function() {
+          if (page === lastPage) {
+            page = 0;
+            changePage();
+          } else {
+            page++;
+            changePage();
+          };
+        }, 5000);
+      }
+      //（７）～秒間隔でイメージ切換の停止設定
+      function stopTimer() {
+        clearInterval(Timer);
+      }
+
+      //（８）タイマースタート
+      startTimer();
+
+      /*オプションを足す場合はここへ記載*/
+
+    });
+
+  </script>
+</body>
+
+</html>

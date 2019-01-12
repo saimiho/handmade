@@ -1,0 +1,233 @@
+charset "utf-8"
+
+#body {
+  width: 960px;
+  height: 1650px;
+  margin: 0;
+  font-size: 1.0rem;
+  font-family: "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+}
+
+#box {
+  margin: 0;
+}
+
+/*****************************head*****************************/
+.header {
+  width: 100%;
+  height: 130px;
+}
+
+.header .logo {
+  width: 200px;
+  height: 130px;
+  margin-left: 50px;
+  float: left;
+  overflow: hidden;
+}
+
+.header .global-nav {
+  width: 50%;
+  height: 130px;
+  margin-left: 720px;
+}
+
+.global-nav .nav-item {
+  display: inline-block;
+  font-size: 20px;
+  margin: 80px 50px 10px 20px;
+}
+
+.global-nav .nav-item a {
+  list-style: none;
+  text-decoration: none;
+  color: black;
+  background-color: transparent;
+}
+
+.global-nav .nav-item:hover,
+.global-nav .nav-item a:hover {
+  color: hotpink;
+}
+
+/*****************************head*****************************/
+/*****************************main*****************************/
+.main {
+  width: 100%;
+  height: 1460px;
+}
+
+/*************************/
+.content-a {
+  width: 100%;
+  height: 400px;
+  background-image: url(../images/white-wall.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+/**************************/
+.content-b {
+  width: 100%;
+  height: 400px;
+}
+
+.content-b .text-box {
+  width: 140px;
+  height: 50px;
+  margin-left: 400px;
+
+}
+
+.content-b .text-box h2 {
+  text-align: center;
+}
+
+.content-b .title-box {
+  width: 60%;
+  height: 350px;
+  margin-left: 300px;
+}
+
+.title-box .title {
+  width: 400px;
+  height: 50px;
+  margin-left: 300px;
+  margin-top: 10px;
+}
+
+.title-box #slide img {
+  width: 200px;
+  height: 250px;
+  overflow: hidden;
+  float: left;
+  margin-left: 50px;
+}
+
+
+#slide {
+  position: relative;
+}
+
+
+#slide img {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.title-box .textbox {
+  width: 550px;
+  height: 100px;
+  float: right;
+  margin-right: 10px;
+  margin-top: 50px;
+}
+
+.title-box .button {
+  width: 550px;
+  height: 60px;
+  margin-top: 180px;
+  margin-left: 290px;
+}
+
+.btn {
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  color: black;
+  width: 120px;
+  height: 50px;
+  line-height: 50px;
+  margin-left: 250px;
+  border-radius: 5px;
+  text-align: center;
+  vertical-align: middle;
+  overflow: hidden;
+  font-weight: bold;
+  background-image: -webkit-linear-gradient(lightgray 0%, lightgray 100%);
+  background-image: linear-gradient(lightgray 0%, lightgray 100%);
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.66);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.28);
+}
+
+.btn:active {
+  /*押したとき*/
+  -ms-transform: translateY(2px);
+  -webkit-transform: translateY(2px);
+  transform: translateY(2px);
+  /*沈むように*/
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
+  background-image: -webkit-linear-gradient(gray 0%, #fff 100%);
+  background-image: linear-gradient(gray 0%, #fff 100%);
+  /*グラデーションを明るく*/
+}
+
+/**************************/
+.content-c {
+  width: 100%;
+  height: 300px;
+  border-top: 1px solid;
+  border-color: gainsboro;
+}
+
+.content-c .text-box {
+  width: 100px;
+  height: 40px;
+}
+
+.content-c .text-box h2 {
+  padding-left: 70px;
+}
+
+.content-c .img-box {
+  width: 100%;
+  height: 150px;
+}
+
+.content-c .img-box img {
+  width: 150px;
+  height: 150px;
+  margin-left: 70px;
+}
+
+.content-c .comment-box1 {
+  width: 100%;
+  height: 100px;
+}
+
+.comment-box1 .littilebox {
+  width: 155px;
+  height: 70px;
+  margin: 5px 0px 10px 70px;
+  float: left;
+  font-size: 11px;
+  text-align: center;
+}
+
+/***************************************/
+.content-d {
+  width: 100%;
+  height: 300px;
+  border-top: 1px solid;
+  border-color: gainsboro;
+}
+
+.content-d .small-box {
+  width: 330px;
+  height: 230px;
+  overflow: hidden;
+  float: left;
+  margin-left: 110px;
+  margin-top: 50px;
+}
+
+/***********************************/
+
+.footer {
+  width: 100%;
+  height: 50px;
+  text-align: center;
+
+}

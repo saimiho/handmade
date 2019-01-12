@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Well</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/recomend.css">
+  <script type="text/javascript" src="portfolio/jquery/jquery.min.js"></script>
+  <link rel="shortcut icon" href="../images/logo1.png">
+</head>
+
+<body id="body">
+  <div id="box">
+    <header class="header">
+      <div class="logo"><img src="../images/logo1.png"></div>
+      <nav class="global-nav">
+        <ul>
+          <li class="nav-item"><a href="index.html">ホーム</a></li>
+          <li class="nav-item"><a href="recomend.html">recomend</a></li>
+          <li class="nav-item"><a href="concept.html">concept</a></li>
+          <li class="nav-item"><a href="#">お問い合わせ</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!------------------------------------------------->
+    <main class="main">
+      <div class="content-a">
+        <div class="img">
+        </div>
+        <div class="textbox">
+        </div>
+      </div>
+      <!---content-a---------------------------------------------->
+      <div class="content-b">
+        <div class="text-box">
+          <h2>recomend</h2>
+        </div>
+
+        <div class="title-box">
+          <div class="title">
+            <h3>ウェーブイヤリング</h3>
+          </div>
+          <div id="slide">
+            <div id="slide img">
+              <img src="../images/e6.jpg">
+              <img src="../images/earring.png">
+            </div>
+          </div>
+          <div class="textbox">
+            <h4>小さいパールを組み合わせた高級感あるイヤリング<br>ちょっとしたお出かけからフォーマルにも。</h4>
+          </div>
+          <div class="button">
+            <a href="#" class="btn">購入する</a>
+          </div>
+        </div>
+        <!--↑title-box---->
+      </div>
+      <!---content-b---------------------------------------------->
+
+
+      <div class="content-c">
+        <div class="text-box">
+          <h2>Other</h2>
+        </div>
+        <div class=img-box>
+          <img src="../images/e1.jpg">
+          <img src="../images/e15.png">
+          <img src="../images/e10.png">
+          <img src="../images/e13.png">
+          <img src="../images/e8.png">
+          <img src="../images/e14.png">
+        </div>
+        <div class="comment-box1">
+          <div class="littilebox">
+            <h3>1.ブラックイヤリング<br>¥1000</h3>
+          </div>
+          <div class="littilebox">
+            <h3>2.たまねぎイヤリング<br>¥1000</h3>
+          </div>
+          <div class="littilebox">
+            <h3>3.ブルーイヤリング<br>¥1000</h3>
+          </div>
+          <div class="littilebox">
+            <h3>4.ウッドイヤリング<br>¥1000</h3>
+          </div>
+          <div class="littilebox">
+            <h3>5.ベージュイヤリング<br>¥1000</h3>
+          </div>
+          <div class="littilebox">
+            <h3>6.グリーンイヤリング<br>¥1000</h3>
+          </div>
+        </div>
+
+      </div>
+      <!--------------content-c----------------------------------->
+      <div class="content-d">
+        <div class="small-box">
+          <img src="../images/うめ1.png">
+        </div>
+        <div class="small-box">
+          <img src="../images/green1.png">
+        </div>
+        <div class="small-box">
+          <img src="../images/blue11.png">
+        </div>
+      </div>
+      <!---content-d---------------------------------------------->
+
+
+    </main>
+    <!--mainタグ終わり--->
+  </div>
+  <!--boxタグ終わり--->
+  <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-1.9.0.js"></script>
+  <script>
+    $(function() {
+
+
+      //（１）ページの概念・初期ページを設定
+      var page = 0;
+
+      //（２）イメージの数を最後のページ数として変数化
+      var lastPage = parseInt($("#slide img").length - 1);
+
+      //（３）最初に全部のイメージを一旦非表示にします
+      $("#slide img").css("display", "none");
+
+      //（４）初期ページを表示
+      $("#slide img").eq(page).css("display", "block");
+
+      //（５）ページ切換用、自作関数作成
+      function changePage() {
+        $("#slide img").fadeOut(1000);
+        $("#slide img").eq(page).fadeIn(1000);
+      };
+
+      //（６）～秒間隔でイメージ切換の発火設定
+      var Timer;
+
+      function startTimer() {
+        Timer = setInterval(function() {
+          if (page === lastPage) {
+            page = 0;
+            changePage();
+          } else {
+            page++;
+            changePage();
+          };
+        }, 5000);
+      }
+      //（７）～秒間隔でイメージ切換の停止設定
+      function stopTimer() {
+        clearInterval(Timer);
+      }
+
+      //（８）タイマースタート
+      startTimer();
+
+      /*オプションを足す場合はここへ記載*/
+
+    });
+
+  </script>
+
+
+
+</body>
+<footer class="footer">
+  &copy; 2018 well.com
+</footer>
+
+</html>
